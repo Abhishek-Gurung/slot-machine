@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Slot Machine by Gregory Rzeczko</title>
+	<meta name="description" content="Slot Machine">
+	<meta name="author" content="Gregory Rzeczko">
+
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="javascript/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div id="machine">
+		<div id="slot" class="left">
+			<div class="text">
+				Credits: <b><span id="credits"></span></b>
+			</div>	
+
+			<div class="reel">
+				<div id="spot1" class="left">
+					<div class="symbol">
+						<img src="" id="symbol1" />
+					</div>
+				</div>
+				<div id="spot2" class="left">
+					<div class="symbol">
+						<img src="" id="symbol2" />
+					</div>	
+				</div>
+				<div id="spot3" class="left">
+					<div class="symbol">
+						<img src="" id="symbol3" />
+					</div>	
+				</div>
+				<div class="clear"></div>	
+			</div>	
+			<div class="text left">Winnings: <b><span id="winnings">0</span></b></div>
+			<div class="text right">Total Winnings: <b><span id="total-winnings">0</span></b></div>
+			<div class="clear"></div>
+		</div>
+		<div id="spin" class="left">
+			<p><button id="spin-btn"><b>SPIN</b></button></p>
+		</div>
+		<div class="clear"></div>	
+	</div>	
+
+  	<script src="javascript/model.js"></script>	
+  	<script src="javascript/slot.js"></script>
+</body>
+</html>

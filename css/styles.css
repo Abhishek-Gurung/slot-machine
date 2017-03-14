@@ -1,0 +1,131 @@
+body {
+	color: #fff;
+	font-family: verdana;
+	background: url(/images/background3.png) no-repeat center center fixed;
+	background-color: #000;
+}
+
+.text {
+	background-color: #315b6e;
+	display: inline-block;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+#machine {
+	margin:12% auto;
+	text-align: center;
+	width: 850px;
+}
+
+#slot {
+	text-align: left;
+}
+
+.reel {
+	border: 1px solid black;
+	margin: 10px 0;
+	padding: 10px;
+	text-align: center;
+	width: 500px;
+	height: 135px;
+	overflow: hidden;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 0px 20px #000;
+	filter:progid:DXImageTransform.Microsoft.Glow(Color=black,Strength=20);
+}
+
+.reel.active {
+	-webkit-animation: pulsate .3s infinite alternate;
+    -moz-animation: pulsate .3s infinite alternate;
+	-animation: pulsate .3s infinite alternate;
+}
+
+.symbol {
+	width: 166px;
+	height: 155px;
+}
+
+img.winning {
+  	-webkit-animation: glow .3s alternate infinite;
+  	animation: glow .3s alternate infinite;
+}
+
+#spot1, #spot2, #spot3 {
+	position: relative;
+}
+
+#spin-btn {
+	margin: 40px;
+	display: inline-block;
+	padding: 15px 45px;
+	font-size: 40px;
+	font-family: verdana;
+	line-height: 1.8;
+	color: #fff;
+    background-color: #6496c8;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px #27496d;
+}
+
+#spin-btn:focus {
+  	outline: none
+}
+
+#spin-btn:active {
+  	background-color: #417cb8;
+    box-shadow: 0 5px #27496d;
+    transform: translateY(5px);
+}
+
+#spin-btn:hover {
+	background-color: #417cb8
+}
+
+@-webkit-keyframes pulsate {
+    from { box-shadow: 0 0 10px #333; }
+    to { box-shadow: 0 0 60px #e5e67c; }
+}
+@-moz-keyframes pulsate {
+    from { box-shadow: 0 0 10px #333; }
+    to { box-shadow: 0 0 60px #e5e67c; }
+}
+@keyframes pulsate {
+    from { box-shadow: 0 0 10px #333; }
+    to { box-shadow: 0 0 60px #e5e67c; }
+}
+
+@-webkit-keyframes glow {
+  	0% {
+    	-webkit-filter: brightness(1);
+    	filter: brightness(1);
+  	}
+  	100% {
+    	-webkit-filter: brightness(2);
+    	filter: brightness(2);
+  	}
+}
+@keyframes glow {
+  	0% {
+    	-webkit-filter: brightness(1);
+    	filter: brightness(1);
+  	}
+  	100% {
+    	-webkit-filter: brightness(2);
+    	filter: brightness(2);
+  	}
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
